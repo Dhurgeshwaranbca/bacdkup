@@ -1,0 +1,58 @@
+package LM;
+import java.util.Scanner;
+
+public class Head {
+	int bookCount= 100;
+	int blen;
+	int stulen = 0;
+	int stuCount = 100;
+	String students [][] = new String [stuCount][stuCount];
+	private String Books[] = new String[bookCount];
+	void show()
+	{
+		System.out.println("Enter 1 for Add Boox");
+		System.out.println("Enter 2 for Register as Student");
+		System.out.println("Emter 3 for Get Book");
+		System.out.println("Enter 4 for return Book");
+		System.out.println("Enter 5 for Get Books Details");
+		
+	}
+	void getInput()
+	{
+		show();
+		Scanner scanner = new Scanner("Enter Here.. ");
+		
+	}
+	void addBook(String book)
+	{
+		blen++;
+		Books[blen] = book; 
+		
+	}
+	String getBook(String book)
+	{
+		for(int i = 0; i<blen;i++)
+		{
+			if(Books[i] == book)
+			{
+				return Books[i];
+			}
+			
+		}
+		System.out.println("Enter valid Book Name or check Spelling");
+		return "";
+		
+	}
+	void studentReg(String Name, String RegNo)
+	{
+		stulen++;
+		Students[0][stulen] = 
+		
+		
+	}
+	public static void main(String[] args) {
+		
+		
+	}
+
+}
